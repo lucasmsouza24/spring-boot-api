@@ -1,0 +1,13 @@
+.pokemon {
+    border: rgb(179, 179, 255) 1px solid;
+    margin: 5px 0px;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+.pokemon:hover {
+    background-color: white;
+    color: rgb(22, 22, 58);
+    cursor: pointer
+}
