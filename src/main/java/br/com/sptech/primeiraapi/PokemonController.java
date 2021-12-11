@@ -15,12 +15,7 @@ public class PokemonController {
     private List<Pokemon> pokemons = new ArrayList<Pokemon>();
     
     @GetMapping("/listAll")
-    public List<Pokemon> getPokemon() {
-
-        // pokemons.add(new Pokemon("charmander", "fire"));
-        // pokemons.add(new Pokemon("pikachu", "eletric"));
-        // pokemons.add(new Pokemon("bulbassaur", "grass"));
-        
+    public List<Pokemon> getPokemons() {        
         return pokemons;
     }
 
@@ -28,6 +23,7 @@ public class PokemonController {
     public void postPokemon(@RequestBody Pokemon pkm) {
         try {
             this.pokemons.add(pkm);
+            System.out.println("Pokemon adicionado: " + pkm.getName());
         } catch(Exception e) {
             System.out.println(e);
         }
