@@ -1,4 +1,4 @@
-package br.com.sptech.primeiraapi;
+package br.com.sptech.primeiraapi.entities;
 
 public class Pokemon {
     private String name;
