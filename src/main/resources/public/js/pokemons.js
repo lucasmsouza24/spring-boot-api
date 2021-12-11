@@ -13,8 +13,8 @@ btn.addEventListener("click", evt => {
     } else {
         // send new pokemon
         sendNewPokemon(inputName.value, inpuType.value);
-        updatePokemonList()
         clearInputs([inputName, inpuType]);
+        updatePokemonList()
     }
 })
 
