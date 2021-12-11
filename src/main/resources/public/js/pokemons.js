@@ -8,6 +8,8 @@ const inpuType = document.querySelector("#inputType");
 
 // new pokemon click
 btn.addEventListener("click", evt => {
+    evt.preventDefault();
+    
     if (inputName.value === "") {
         window.alert("invalid name")
     } else {
